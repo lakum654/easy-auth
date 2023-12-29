@@ -1,6 +1,6 @@
 {
     "name": "lakum/easy-auth",
-    "description": "Laravel Login Register",
+    "description": "Laravel Login and Register Package",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -14,5 +14,20 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5|^9.0"
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lakum\\EasyAuth\\EasyAuthServiceProvider"
+            ]
+        }
+    }
 }
