@@ -54,6 +54,7 @@ This will copy the traits to the app/Http/Traits directory.
     Route::post('/register', [EasyAuthController::class, 'register']);
     Route::post('/logout', [EasyAuthController::class, 'logout'])->name('logout');
 });
+```
  
 
 # Configuration
