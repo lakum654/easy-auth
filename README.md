@@ -44,7 +44,17 @@ php artisan vendor:publish --tag=easy-auth-traits
 
 This will copy the traits to the app/Http/Traits directory.
 
+# After published add below routes (optional) Or You can add Manually according to your project
 
+```base
+    Route::group(['namespace' => '\\'], function () {
+    Route::get('/login', [EasyAuthController::class,'showLoginForm'])->name('login');
+    Route::post('/login', [EasyAuthController::class, 'login']);
+    Route::get('/register', [EasyAuthController::class, 'showRegisterForm'])->name('register');
+    Route::post('/register', [EasyAuthController::class, 'register']);
+    Route::post('/logout', [EasyAuthController::class, 'logout'])->name('logout');
+});
+ 
 
 # Configuration
 EasyAuth does not require additional configuration. Customize the views, controllers, or traits by modifying the files in the published directories.
