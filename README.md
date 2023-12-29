@@ -23,6 +23,11 @@ Once installed, add the EasyAuth service provider to the providers array in your
 Publishing Views
 Publish the package views using the following Artisan command:
 
+publish all required resources
+php artisan vendor:publish --tag=easy-auth
+
+# OR
+
 php artisan vendor:publish --tag=easy-auth-views
 
 This will copy the views to the resources/views/vendor/easy-auth directory.
@@ -39,9 +44,7 @@ php artisan vendor:publish --tag=easy-auth-traits
 
 This will copy the traits to the app/Http/Traits directory.
 
-publish all resources
 
-php artisan vendor:publish --tag=easy-auth
 
 # Configuration
 EasyAuth does not require additional configuration. Customize the views, controllers, or traits by modifying the files in the published directories.
