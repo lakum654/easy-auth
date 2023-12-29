@@ -19,7 +19,7 @@ Once installed, add the EasyAuth service provider to the providers array in your
     Lakum\EasyAuth\EasyAuthServiceProvider::class,
 ],
 
-# Usage
+## Usage
 Publishing Views
 Publish the package views using the following Artisan command:
 
